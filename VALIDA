@@ -1,10 +1,14 @@
+PARAMS
+"RUT": "XX.XXX.XXX-X",
+"DOCUMENTO": "XXXXXXXXX",
+
 REQUEST
 http://65.20.99.1:3000/validador?rut={RUT}&documento={DOCUMENTO}
 ;
 
 
-ANSWER
-JSON
+ANSWERS
+JSON OK
 {
           "resultado": {
                     "status": true,
@@ -16,3 +20,16 @@ JSON
           }
 }
 ;
+JSON NO VALIDO
+{
+          "resultado": {
+                    "status": false,
+                    "data": {
+                              "rut": "XX.XXX.XXX-X",
+                              "documento": "XXXXXXXXX",
+                              "estado": "No Valido"
+                    }
+          }
+}
+;
+
