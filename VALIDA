@@ -1,0 +1,18 @@
+REQUEST
+http://65.20.99.1:3000/validador?rut={RUT}&documento={DOCUMENTO}
+;
+
+
+ANSWER
+JSON
+{
+          "resultado": {
+                    "status": true,
+                    "data": {
+                              "rut": "XX.XXX.XXX-X",
+                              "documento": "XXXXXXXXX",
+                              "estado": "Valido"
+                    }
+          }
+}
+;
