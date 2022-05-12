@@ -3,7 +3,7 @@ PARAMS
 "DOCUMENTO": "XXXXXXXXX",
 
 REQUEST
-http://65.20.99.1:3000/validador?rut={RUT}&documento={DOCUMENTO}
+http://65.20.99.1:3000/validador?rut=RUT&documento=DOCUMENTO
 ;
 
 
