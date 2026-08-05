@@ -1,35 +1,20 @@
 PARAMS
-"RUT": "XX.XXX.XXX-X",
+"RUT": "XXXXXXXX-X",
 "DOCUMENTO": "XXXXXXXXX",
 
 REQUEST
-http://65.20.99.1:3000/validador?rut=RUT&documento=DOCUMENTO
+http://144.202.75.22:3000/validate?rut=RUT&ndoc=DOCUMENTO
 ;
 
 
 ANSWERS
 JSON OK
-{
-          "resultado": {
-                    "status": true,
-                    "data": {
-                              "rut": "XX.XXX.XXX-X",
-                              "documento": "XXXXXXXXX",
-                              "estado": "Valido"
-                    }
-          }
+{{"message":"Cédula vigente"}
 }
 ;
 JSON NO VALIDO
 {
-          "resultado": {
-                    "status": false,
-                    "data": {
-                              "rut": "XX.XXX.XXX-X",
-                              "documento": "XXXXXXXXX",
-                              "estado": "No Valido"
-                    }
-          }
+{"message":"Cédula no vigente"} 
 }
 ;
 
